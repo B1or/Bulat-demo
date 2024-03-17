@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ИПУ Булат</string>
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+    <string name="nav_header_title">ИПУ БУЛАТ</string>
+    <string name="nav_header_desc">Заголовок навигации</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_quit">Выход</string>
+
+    <string name="menu_passport">Технический паспорт</string>
+    <string name="title_passport">Технический паспорт</string>
+    <string name="menu_measured">Измеряемые параметры</string>
+    <string name="title_measured">Измеряемые параметры</string>
+    <string name="menu_consumed_current">Текущие значения</string>
+    <string name="title_consumed_current">Текущие значения</string>
+    <string name="menu_archived">Архивные данные</string>
+    <string name="title_archived">Архивные данные</string>
+
+    <string name="slide_1"><![CDATA[
+        <p><b>О компании</b></p>
+        <p><b>«БУЛАТ»</b> - российская компания-разработчик телекоммуникационного и ИТ-оборудования. Компания занимается
+            разработкой высокотехнологичных решений в сфере телекоммуникаций и информационных технологий и ее важнейшей задачей на
+            современном этапе является создание задела технологий для задачи импортозамещения в государственных и контролируемых
+            государством компаниях в области телекоммуникации, вычислительной техники и промышленного интернета вещей.</p>
+        <p><b>Реквизиты:</b></p>
+        <p>Общество с ограниченной ответственностью «БУЛАТ» (ООО «БУЛАТ»)</p>
+        <p>ОГРН 1157746220598</p>
+        <p>ИНН 7724309893 / КПП 772401001</p>
+        <p>www.opk-bulat.ru</p>
+        <p>info@opk-bulat.ru</p>
+    ]]></string>
+    <string name="slide_2"><![CDATA[
+        <p><b>О счетчиках</b></p>
+        <p><b>Счётчики</b> электрической энергии статические однофазные интеллектуальные БУЛАТ-32 (далее – счётчики) предназначены для
+            измерений и учета активной и реактивной электрической энергии в распределительных и внутренних однофазных двухпроводных
+            электрических сетях с напряжением переменного тока 0,23 кВ промышленной частоты, а также для измерений напряжения и частоты
+            переменного тока.</p>
+        <p>Межповерочный интервал 16 лет.</p>
+        <p>В соответствии с Федеральным законом № 102-ФЗ «Об обеспечении единства измерений» счетчики электрической энергии статические
+            однофазные интеллектуальные БУЛАТ-32 внесены в электронный реестр ФГИС «АРШИН».</p>
+    ]]></string>
+    <string name="slide_3"><![CDATA[
+        <p><b>О приложении</b></p>
+        <p><b>Мобильное приложение</b> «БУЛАТ 32/24» предназначено для визуализации измеренных параметров потребляемой электроэнергии,
+            полученных со счетчиков «БУЛАТ-24» и «БУЛАТ-32».</p>
+    ]]></string>
+    <string name="scan_name">Булат: Скан QR</string>
+    <string name="next">Дальше</string>
+    <string name="close">Закрыть</string>
+    <string name="scan">Скан QR</string>
+    <string name="connect">Подключиться</string>
+    <string name="serial_number_">Серийный номер:</string>
+    <string name="camera">Камера</string>
+    <string name="request">Запросить</string>
+    <string name="refuse">Отказаться</string>
+    <string name="permissions_refuse">Отказано в разрешениях.</string>
+    <string name="permission_message_qr">Без данного разрешения приложение не сможет отсканировать QR-код.</string>
+    <string name="inappropriate_qr_code">Неподходящий QR-код.</string>
+    <string name="visible_title">Показывать экран приветствия</string>
+    <string name="meter_header">Счётчик</string>
+    <string name="server_header">Сервер</string>
+    <string name="serial_title">Серийный номер</string>
+    <string name="server_address_title">Адрес сервера</string>
+    <string name="title_activity_settings">Настройки</string>
+
+    <string name="detect_voltage">Наличие напряжения</string>
+    <string name="voltage">Ннапряжение</string>
+    <string name="good_frequency">Частота в норме</string>
+    <string name="relay_state">Состояние реле</string>
+    <string name="case_state">Состояние крышки</string>
+    <string name="connect_state">Соединение с системой сбора данных</string>
+    <string name="magnetic_impact">Воздействие магнитного поля</string>
+    <string name="active_tariff">Текущая тарифная зона</string>
+
+    <string name="p_summary_">+ Суммарно по всем тарифам:</string>
+    <string name="p_t_1_">+ По первому тарифу:</string>
+    <string name="p_t_2_">+ По второму тарифу:</string>
+    <string name="p_t_3_">+ По третьему тарифу:</string>
+    <string name="p_t_4_">+ По четвёртому тарифу:</string>
+    <string name="m_summary_">- Суммарно по всем тарифам:</string>
+    <string name="m_t_1_">- По первому тарифу:</string>
+    <string name="m_t_2_">- По второму тарифу:</string>
+    <string name="m_t_3_">- По третьему тарифу:</string>
+    <string name="m_t_4_">- По четвёртому тарифу:</string>
+
+    <string name="meter_passport_">Паспорт счётчика:</string>
+    <string name="manufacturer_">Производитель:</string>
+    <string name="manufacturer">ООО "БУЛАТ"</string>
+    <string name="model_">Модель:</string>
+    <string name="model">Булат-32</string>
+    <string name="serial_">Серийный номер:</string>
+    <string name="hardware_">Версия оборудования:</string>
+    <string name="firmware_">Версия прошивки:</string>
+    <string name="software_">Версия программы:</string>
+    <string name="application_">Версия приложения:</string>
+
+    <string name="current_values_measured_parameters_">Текущие значения измеряемых параметров:</string>
+    <string name="power_active_">Активная мощность, Вт:</string>
+    <string name="power_reactive_">Реактивная мощность, Вар:</string>
+    <string name="phase_voltage_">Напряжение, В:</string>
+    <string name="phase_current_">Ток фазный, А:</string>
+    <string name="neutral_current_">Ток нейтрали, А:</string>
+    <string name="frequency_">Частота сети, Гц:</string>
+
+    <string name="current_values_consumed_electricity_">Текущие значения потребленной электроэнергии:</string>
+    <string name="forward_active_">Активная прямая, кВт·ч:</string>
+    <string name="forward_reactive_">Реактивная прямая, кВар·ч:</string>
+    <string name="reverse_active_">Активная обратная, кВт·ч:</string>
+    <string name="reverse_reactive_">Реактивная обратная, кВар·ч:</string>
+
+    <string name="per_day">За сутки</string>
+    <string name="per_month">За месяц</string>
+    <string name="calendar">Календарь</string>
+    <string name="graph">График</string>
+    <string name="table">Таблица</string>
+    <string name="day">День</string>
+    <string name="tariff_0">Σ</string>
+    <string name="tariff_1">Т1</string>
+    <string name="tariff_2">Т2</string>
+    <string name="tariff_3">Т3</string>
+    <string name="tariff_4">Т4</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="graph_description">Потребление электроэнергии по времени.</string>
+
+    <string name="error_internet_">Ошибка получения данных с интрнета:</string>
+    <string name="error_parsing">Ошибка парсинга JSON.</string>
+    <string name="error_response">Нет ответа.</string>
+    <string name="error_read">Ошибка чтения из интернета.</string>
+    <string name="change_settings">При изменении данных настроек необходимо перезапустить приложение.</string>
+    <string name="no_data">Нет данных за этот период.</string>
+</resources>

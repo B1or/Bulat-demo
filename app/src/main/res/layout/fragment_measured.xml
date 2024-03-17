@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeasuredFragment">
+
+    <TextView
+        android:id="@+id/tvMeasuredText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/current_values_measured_parameters_"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPowerActiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/power_active_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvMeasuredPowerActive" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPowerActive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierMeasured"
+        app:layout_constraintTop_toBottomOf="@id/tvMeasuredText"
+        tools:text="0.002" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPowerReactiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/power_reactive_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvMeasuredPowerReactive" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPowerReactive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierMeasured"
+        app:layout_constraintTop_toBottomOf="@id/tvMeasuredPowerActive"
+        tools:text="-0.079" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPhaseVoltageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/phase_voltage_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvMeasuredPhaseVoltage" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPhaseVoltage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierMeasured"
+        app:layout_constraintTop_toBottomOf="@id/tvMeasuredPowerReactive"
+        tools:text="32.254" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPhaseCurrentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/phase_current_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvMeasuredPhaseCurrent" />
+
+    <TextView
+        android:id="@+id/tvMeasuredPhaseCurrent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierMeasured"
+        app:layout_constraintTop_toBottomOf="@id/tvMeasuredPhaseVoltage"
+        tools:text="0.019" />
+
+    <TextView
+        android:id="@+id/tvMeasuredNeutralCurrentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/neutral_current_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvMeasuredNeutralCurrent" />
+
+    <TextView
+        android:id="@+id/tvMeasuredNeutralCurrent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierMeasured"
+        app:layout_constraintTop_toBottomOf="@id/tvMeasuredPhaseCurrent"
+        tools:text="0.023" />
+
+    <TextView
+        android:id="@+id/tvMeasuredFrequencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/frequency_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvMeasuredFrequency" />
+
+    <TextView
+        android:id="@+id/tvMeasuredFrequency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierMeasured"
+        app:layout_constraintTop_toBottomOf="@id/tvMeasuredNeutralCurrent"
+        tools:text="0.0" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierMeasured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="tvMeasuredPowerActiveText,tvMeasuredPowerReactiveText,tvMeasuredPhaseVoltageText,tvMeasuredPhaseCurrentText,tvMeasuredNeutralCurrentText,tvMeasuredFrequencyText"
+        tools:layout_editor_absoluteX="411dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

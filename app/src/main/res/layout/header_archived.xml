@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:divider="?android:dividerVertical"
+    android:orientation="horizontal"
+    android:showDividers="middle|beginning|end">
+
+    <TextView
+        android:id="@+id/tvNumberItemArchived"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/day"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvT0HeaderArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tariff_0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvT1HeaderArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tariff_1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvT2HeaderArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tariff_2"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvT3HeaderArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tariff_3"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvT4HeaderArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tariff_4"
+        android:textSize="14sp" />
+
+</LinearLayout>

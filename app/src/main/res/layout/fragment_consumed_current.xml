@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentConsumedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCurrentText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/current_values_consumed_electricity_"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/p_summary_"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentText" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumForwardActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_active_"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentSumForwardActive"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumForwardActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentSumText"
+                    tools:text="1469.901" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumForwardReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentSumForwardReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumForwardReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentSumForwardActive"
+                    tools:text="1443.612"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumReverseActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_active_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentSumReverseActive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumReverseActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentSumForwardReactive"
+                    tools:text="73868.91"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumReverseReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentSumReverseReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentSumReverseReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentSumReverseActive"
+                    tools:text="24736.52"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/p_t_1_"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentSumReverseReactiveText" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ForwardActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_active_"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT1ForwardActive"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ForwardActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT1Text"
+                    tools:text="276.223" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ForwardReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT1ForwardReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ForwardReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT1ForwardActive"
+                    tools:text="306.587"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ReverseActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_active_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT1ReverseActive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ReverseActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT1ForwardReactive"
+                    tools:text="16280.017"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ReverseReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT1ReverseReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT1ReverseReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT1ReverseActive"
+                    tools:text="2883.869"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/p_t_2_"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentT1ReverseReactiveText" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ForwardActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_active_"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT2ForwardActive"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ForwardActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT2Text"
+                    tools:text="446.887" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ForwardReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT2ForwardReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ForwardReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT2ForwardActive"
+                    tools:text="878.217"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ReverseActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_active_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT2ReverseActive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ReverseActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT2ForwardReactive"
+                    tools:text="44948.4"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ReverseReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT2ReverseReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT2ReverseReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT2ReverseActive"
+                    tools:text="135.429"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/p_t_3_"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentT2ReverseReactiveText" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ForwardActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_active_"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT3ForwardActive"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ForwardActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT3Text"
+                    tools:text="746.791" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ForwardReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT3ForwardReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ForwardReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT3ForwardActive"
+                    tools:text="258.808"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ReverseActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_active_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT3ReverseActive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ReverseActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT3ForwardReactive"
+                    tools:text="12640.487"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ReverseReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT3ReverseReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT3ReverseReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT3ReverseActive"
+                    tools:text="21717.225"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/p_t_4_"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentT3ReverseReactiveText" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ForwardActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_active_"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT4ForwardActive"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ForwardActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT4Text"
+                    tools:text="682.321" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ForwardReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/forward_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT4ForwardReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ForwardReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT4ForwardActive"
+                    tools:text="304.227"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ReverseActiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_active_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT4ReverseActive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ReverseActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT4ForwardReactive"
+                    tools:text="13860.173"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ReverseReactiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/reverse_reactive_"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tvCurrentT4ReverseReactive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCurrentT4ReverseReactive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/measure_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/barrierCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCurrentT4ReverseActive"
+                    tools:text="8863.669"
+                    tools:visibility="visible" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrierCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="end"
+                    app:constraint_referenced_ids="tvCurrentSumForwardActiveText,tvCurrentSumForwardReactiveText,tvCurrentSumReverseActiveText,tvCurrentSumReverseReactiveText,tvCurrentT1ForwardActiveText,tvCurrentT1ForwardReactiveText,tvCurrentT1ReverseActiveText,tvCurrentT1ReverseReactiveText,tvCurrentT2ForwardActiveText,tvCurrentT2ForwardReactiveText,tvCurrentT2ReverseActiveText,tvCurrentT2ReverseReactiveText,tvCurrentT3ForwardActiveText,tvCurrentT3ForwardReactiveText,tvCurrentT3ReverseActiveText,tvCurrentT3ReverseReactiveText,tvCurrentT4ForwardActiveText,tvCurrentT4ForwardReactiveText,tvCurrentT4ReverseActiveText,tvCurrentT4ReverseReactiveText"
+                    tools:layout_editor_absoluteX="282dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

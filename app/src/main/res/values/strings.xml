@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">IPU Bulat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">IPU BULAT</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_quit">Quit</string>
+
+    <string name="menu_passport">Technical certificate</string>
+    <string name="title_passport">Technical certificate</string>
+    <string name="menu_measured">Measured parameters</string>
+    <string name="title_measured">Measured parameters</string>
+    <string name="menu_consumed_current">Current values</string>
+    <string name="title_consumed_current">Current values</string>
+    <string name="menu_archived">Archive data</string>
+    <string name="title_archived">Archive data</string>
+
+    <string name="slide_1"><![CDATA[
+        <p><b>About the company</b></p>
+        <p><b>«BULAT»</b> - is a Russian company that develops telecommunications and IT equipment. The company is engaged
+            development of high-tech solutions in the field of telecommunications and information technology and its most important task for
+            at the present stage is the creation of a backlog of technologies for the task of import substitution in state and controlled
+            state-owned companies in the field of telecommunications, computing and the industrial Internet of things.</p>
+        <p><b>Requisites:</b></p>
+        <p>BULAT Limited Liability Company (BULAT LLC)</p>
+        <p>OGRN 1157746220598</p>
+        <p>TIN 7724309893 / KPP 772401001</p>
+        <p>www.opk-bulat.ru</p>
+        <p>info@opk-bulat.ru</p>
+    ]]></string>
+    <string name="slide_2"><![CDATA[
+        <p><b>About counters</b></p>
+        <p><b>Meters</b> of electrical energy static single-phase intelligent BULAT-32 (hereinafter referred to as meters) are designed for
+            measurements and accounting of active and reactive electrical energy in distribution and internal single-phase two-wire
+            electrical networks with AC voltage 0.23 kV industrial frequency, as well as for voltage and frequency measurements
+            AC.</p>
+        <p>The calibration interval is 16 years.</p>
+        <p>In accordance with Federal Law No. 102-FZ "On Ensuring the Uniformity of Measurements", static electricity meters
+            single-phase intelligent BULAT-32 are included in the electronic register of FSIS "ARSHIN".</p>
+    ]]></string>
+    <string name="slide_3"><![CDATA[
+        <p><b>About the app</b></p>
+        <p><b>Mobile application</b> "BULAT 32/24" is designed to visualize the measured parameters of consumed electricity,
+            received from BULAT-24 and BULAT-32 counters.</p>
+    ]]></string>
+    <string name="scan_name">Bulat: QR scan</string>
+    <string name="next">Next</string>
+    <string name="close">Close</string>
+    <string name="scan">QR scan</string>
+    <string name="connect">Connect</string>
+    <string name="serial_number_">Serial number:</string>
+    <string name="camera">Camera</string>
+    <string name="request">Request</string>
+    <string name="refuse">Refuse</string>
+    <string name="permissions_refuse">Permissions refuse</string>
+    <string name="permission_message_qr">Without this permission, the application will not be able to scan the QR code.</string>
+    <string name="inappropriate_qr_code">Wrong QR code.</string>
+    <string name="visible_title">Show welcome screen</string>
+    <string name="meter_header">Meter</string>
+    <string name="server_header">Server</string>
+    <string name="serial_title">Serial number</string>
+    <string name="server_address_title">Server address</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="detect_voltage">Detect of voltage</string>
+    <string name="voltage">Voltage</string>
+    <string name="good_frequency">Good frequency</string>
+    <string name="relay_state">Relay state</string>
+    <string name="case_state">Case state</string>
+    <string name="connect_state">Connect state</string>
+    <string name="magnetic_impact">Magnetic impact</string>
+    <string name="active_tariff">Current tariff zone</string>
+
+    <string name="p_summary_">+ Total for all tariffs:</string>
+    <string name="p_t_1_">+ For the first tariff:</string>
+    <string name="p_t_2_">+ For the second tariff:</string>
+    <string name="p_t_3_">+ For the third tariff:</string>
+    <string name="p_t_4_">+ For the fourth tariff:</string>
+    <string name="m_summary_">- Total for all tariffs:</string>
+    <string name="m_t_1_">- For the first tariff:</string>
+    <string name="m_t_2_">- For the second tariff:</string>
+    <string name="m_t_3_">- For the third tariff:</string>
+    <string name="m_t_4_">- For the fourth tariff:</string>
+
+    <string name="meter_passport_">Meter passport:</string>
+    <string name="manufacturer_">Manufacturer:</string>
+    <string name="manufacturer">BULAT LLC</string>
+    <string name="model_">Model:</string>
+    <string name="model">Bulat-32</string>
+    <string name="serial_">Serial number:</string>
+    <string name="hardware_">Hardware revision:</string>
+    <string name="firmware_">Firmware revision:</string>
+    <string name="software_">Software revision:</string>
+    <string name="application_">Application revision:</string>
+
+    <string name="current_values_measured_parameters_">Current values of measured parameters:</string>
+    <string name="power_active_">Active power, W:</string>
+    <string name="power_reactive_">Reactive power, Var:</string>
+    <string name="phase_voltage_">Voltage, V:</string>
+    <string name="phase_current_">Phase current, A:</string>
+    <string name="neutral_current_">Neutral current, A:</string>
+    <string name="frequency_">Network frequency, Hz:</string>
+
+    <string name="current_values_consumed_electricity_">Current values of consumed electricity:</string>
+    <string name="forward_active_">Active direct, kWh:</string>
+    <string name="forward_reactive_">Reactive direct, kvarh:</string>
+    <string name="reverse_active_">Active reverse, kWh:</string>
+    <string name="reverse_reactive_">Reactive reverse, kvarh:</string>
+
+    <string name="per_day">Per day</string>
+    <string name="per_month">For the month</string>
+    <string name="calendar">Calendar</string>
+    <string name="graph">Graph</string>
+    <string name="table">Table</string>
+    <string name="day">Day</string>
+    <string name="tariff_0">Σ</string>
+    <string name="tariff_1">T1</string>
+    <string name="tariff_2">T2</string>
+    <string name="tariff_3">T3</string>
+    <string name="tariff_4">T4</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="graph_description">Electricity consumption over time.</string>
+    <string name="archived_button_label_date" translatable="false">%02d.%02d.%04d</string>
+    <string name="archived_button_label_month" translatable="false">%02d.%04d</string>
+
+    <string name="error_internet_">Error get data from internet:</string>
+    <string name="error_parsing">Error parsing JSON.</string>
+    <string name="error_response">Not response.</string>
+    <string name="error_read">Error read from internet.</string>
+    <string name="change_settings">If you change these settings, you must restart the application.</string>
+    <string name="no_data">No data for this period.</string>
+</resources>

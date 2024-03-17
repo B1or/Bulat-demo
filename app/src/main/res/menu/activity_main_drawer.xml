@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_passport"
+            android:icon="@drawable/ic_menu_passport"
+            android:orderInCategory="1"
+            android:title="@string/menu_passport" />
+        <item
+            android:id="@+id/nav_measured"
+            android:icon="@drawable/ic_menu_measured"
+            android:orderInCategory="2"
+            android:title="@string/menu_measured" />
+        <item
+            android:id="@+id/nav_consumed_current"
+            android:icon="@drawable/ic_menu_consumed"
+            android:orderInCategory="3"
+            android:title="@string/menu_consumed_current" />
+        <item
+            android:id="@+id/nav_archived"
+            android:icon="@drawable/ic_menu_archived"
+            android:orderInCategory="4"
+            android:title="@string/menu_archived" />
+    </group>
+</menu>

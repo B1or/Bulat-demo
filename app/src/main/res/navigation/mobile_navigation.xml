@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_passport">
+
+    <fragment
+        android:id="@+id/nav_passport"
+        android:name="tech.droi.bulat_demo.PassportFragment"
+        android:label="@string/title_passport"
+        tools:layout="@layout/fragment_passport" />
+
+    <fragment
+        android:id="@+id/nav_measured"
+        android:name="tech.droi.bulat_demo.MeasuredFragment"
+        android:label="@string/title_measured"
+        tools:layout="@layout/fragment_measured" />
+
+    <fragment
+        android:id="@+id/nav_consumed_current"
+        android:name="tech.droi.bulat_demo.CurrentConsumedFragment"
+        android:label="@string/title_consumed_current"
+        tools:layout="@layout/fragment_consumed_current" />
+
+    <fragment
+        android:id="@+id/nav_archived"
+        android:name="tech.droi.bulat_demo.ArchivedFragment"
+        android:label="@string/title_archived"
+        tools:layout="@layout/fragment_archived" />
+</navigation>

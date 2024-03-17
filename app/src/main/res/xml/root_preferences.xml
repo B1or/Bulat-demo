@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="visible"
+        app:singleLineTitle="false"
+        app:title="@string/visible_title" />
+
+    <PreferenceCategory android:title="@string/meter_header">
+
+        <EditTextPreference
+            android:key="serial"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/serial_title"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue=""/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/server_header">
+
+        <EditTextPreference
+            android:key="server"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/server_address_title"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue=""/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

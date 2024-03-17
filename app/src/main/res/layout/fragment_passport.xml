@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassportFragment">
+
+    <TextView
+        android:id="@+id/tvPassportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/meter_passport_"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPassportManufacturerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/manufacturer_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportManufacturer" />
+
+    <TextView
+        android:id="@+id/tvPassportManufacturer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportText"
+        tools:text="@string/manufacturer" />
+
+    <TextView
+        android:id="@+id/tvPassportModelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/model_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportModel" />
+
+    <TextView
+        android:id="@+id/tvPassportModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportManufacturer"
+        tools:text="@string/model" />
+
+    <TextView
+        android:id="@+id/tvPassportSerialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/serial_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportSerial" />
+
+    <TextView
+        android:id="@+id/tvPassportSerial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportModel"
+        tools:text="100000" />
+
+    <TextView
+        android:id="@+id/tvPassportHardwareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/hardware_"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportHardware"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPassportHardware"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportSerial"
+        tools:text="1.8.3-1" />
+
+    <TextView
+        android:id="@+id/tvPassportFirmwareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/firmware_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportFirmware" />
+
+    <TextView
+        android:id="@+id/tvPassportFirmware"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportHardware"
+        tools:text="1.250" />
+
+    <TextView
+        android:id="@+id/tvPassportSoftwareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/software_"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportSoftware"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPassportSoftware"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportFirmware"
+        tools:text="0.62" />
+
+    <TextView
+        android:id="@+id/tvPassportApplicationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/application_"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPassportApplication"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPassportApplication"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrierPassport"
+        app:layout_constraintTop_toBottomOf="@id/tvPassportSoftware"
+        tools:text="2.01" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierPassport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="tvPassportManufacturerText,tvPassportModelText,tvPassportSerialText,tvPassportHardwareText,tvPassportFirmwareText,tvPassportApplicationText"
+        tools:layout_editor_absoluteX="164dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:divider="?android:dividerVertical"
+    android:orientation="horizontal"
+    android:showDividers="middle|beginning|end">
+
+    <TextView
+        android:id="@+id/tvNumberItemArchived"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="end"
+        android:textSize="@dimen/measure_text_size"
+        tools:text="01:00" />
+
+    <TextView
+        android:id="@+id/tvT0ItemArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="end"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        tools:text="000.000" />
+
+    <TextView
+        android:id="@+id/tvT1ItemArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="end"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        tools:text="000.000" />
+
+    <TextView
+        android:id="@+id/tvT2ItemArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="end"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        tools:text="000.000" />
+
+    <TextView
+        android:id="@+id/tvT3ItemArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="end"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        tools:text="000.000" />
+
+    <TextView
+        android:id="@+id/tvT4ItemArchived"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:textSize="@dimen/measure_text_size"
+        android:textStyle="bold"
+        tools:text="000.000" />
+</LinearLayout>
